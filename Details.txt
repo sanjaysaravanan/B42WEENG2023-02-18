@@ -1,0 +1,40 @@
+Form: 
+  How to take form values to JS
+
+Promise:
+  Object to understand the completion(or failure) of an asynchronous event/operation
+
+  MDN-> https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise
+
+  State:
+    pending --->  initial state, neither fulfilled(success) nor rejected(failure).
+
+    fullfilled ---> meaning that the operation was completed successfully.
+
+    rejected ---> meaning that the operation failed.
+
+  methods:
+    then ---> executed when the promise is fullfilled/resolved
+    catch ---> executed when the promise is rejected/unfullfilled
+  
+  Chaining --> returning an promise from resolvement in parent promise
+    execution time --> sum of time taken by all promise chains
+  All --> Independent Promise triggered simultaneously/parallel
+    execution: Maximum time among promises
+  
+  error:
+    what is an error? ---> syntax, typeerror
+    when does an error occur?
+    https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Error
+  try --> block of Codes which prone to throw an error
+  catch --> catches error occured on try block
+  finally --> executes after try/catch ( used for some cleanup or msg display purpose )
+
+Fetch & then
+  Fetch -> Interface to make an api call
+    then ---> response --> convert response to json -> promsie .then (json -> operation on json)
+
+
+Next Session:
+
+window --> localstorage, sessionStorage
