@@ -38,22 +38,23 @@ var password = 'admin'
 
 // console.log(loginPromise);
 
-// loginPromise
-//   .then((response) => {
-//     console.log('Promise 1');
-//     return new Promise((resolve, reject) => {
-//       setTimeout(() => {
-//         // resolve({ innerPomise: response });
-//         reject({ msg: 'innerPromise rejected' });
-//       }, 2000);
-//     });
-//   })
-//   .then((promise2Response) => {
-//     console.log(promise2Response);
-//   })
-//   .catch((errorReponse) => {
-//     console.log(errorReponse);
-//   });
+loginPromise
+  .then((response) => {
+    console.log('Promise 1');
+    return new Promise((resolve, reject) => {
+      setTimeout(() => {
+        // resolve({ innerPomise: response });
+        reject({ msg: 'innerPromise rejected' });
+      }, 2000);
+    });
+  })
+  .then((promise2Response) => {
+    console.log(promise2Response);
+  })
+  .then(() => { })
+  .catch((errorReponse) => {
+    console.log(errorReponse);
+  });
 
 
 // Building a house

@@ -21,6 +21,8 @@ Promise:
     execution time --> sum of time taken by all promise chains
   All --> Independent Promise triggered simultaneously/parallel
     execution: Maximum time among promises
+  Any --> trigger independent promises
+    resolve is success when any one is resolved
   
   error:
     what is an error? ---> syntax, typeerror
